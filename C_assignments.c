@@ -13,7 +13,7 @@ int main()
 	printf("Power function use is: %lf \n",pow(base,2));
 	printf("Square root is: %lf",sqrt(sq));
      return 0;
-}                      */
+}                      */   // //
 
 
 
