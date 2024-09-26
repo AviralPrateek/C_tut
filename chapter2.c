@@ -24,8 +24,76 @@
 //     return 0;
 // }  
 
+ 
+
+
+/*#include<stdio.h>
+int main(){
+    printf("%d",3>4|| 5>2);
+    return 0;
+}                */
+
+//WAP to check if a no. is divisible by 2
+
+// METHOD 1
+/*#include<stdio.h>
+int main(){
+    int number;
+    printf("Enter the number from console to check if it is divisible by 2 or not:-");
+    scanf("%d",& number);
+
+    if(number%2==0){
+        printf("Divisible by 2. Your number:-%d",number);
+    }
+    else{
+        printf("Not Divisible by 2. Your number:-%d",number);
+    }
+    return 0;
+}                            */
+
+
+//METHOD 2          BY SHRADHA
+/*#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter number to be checked for divisibility by 2 :-");
+    scanf("%d",&num);
+
+    printf("%d",num%2==0);
+    return 0;
+}                      */
+
+//WAP to check if a no. is even/odd.
+
+/*#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter number to be checked for even/odd.");
+    scanf("%d",& num);
+
+    if(num%2==0){
+        printf("Your number is even. %d",num);
+    }
+    else{
+        printf("Your number is odd. %d",num);
+    }
+}            */
+
+
+
+
+//WAP to check if a number is a 2 digit number or not.
+
 #include<stdio.h>
 int main(){
-    printf("%d",4==3);
-    return 0;
+	int num;
+	printf("Enter a number to check if it is a 2 digit no. or not:-");
+	scanf("%d",& num);
+	if((num>9) &(num<100)){
+		printf("2 digit number ! %d", num);
+	}
+	else{
+		printf("Not %d", num);
+	}
+	return 0;
 }
