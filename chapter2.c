@@ -1,4 +1,8 @@
-// #include<stdio.h>
+//CHAPTER 2: Instructions and operators
+
+
+
+//#include<stdio.h>
 // int main(){
 //     printf("%d",31%12);
 //     return 0;
@@ -84,16 +88,30 @@ int main(){
 
 //WAP to check if a number is a 2 digit number or not.
 
+// #include<stdio.h>
+// int main(){
+// 	int num;
+// 	printf("Enter a number to check if it is a 2 digit no. or not:-");
+// 	scanf("%d",& num);
+// 	if((num>9) &(num<100)){
+// 		printf("2 digit number ! %d", num);
+// 	}
+// 	else{
+// 		printf("Not %d", num);
+// 	}
+// 	return 0;
+// }
+
+//HOMEWORK SET QUESTIONS
+
+//WAP to print avg. of three nos.
+
 #include<stdio.h>
 int main(){
-	int num;
-	printf("Enter a number to check if it is a 2 digit no. or not:-");
-	scanf("%d",& num);
-	if((num>9) &(num<100)){
-		printf("2 digit number ! %d", num);
-	}
-	else{
-		printf("Not %d", num);
-	}
-	return 0;
+    float a,b,c;
+    printf("Enter your 3 nos:-");
+    scanf("%f %f %f", &a, &b, &c);
+    printf("Your avg. is:-%f",((a+b+c)/3));
+    printf("Your 3 numbers are: %f, %f, %f\n",a,b,c);
+    return 0;
 }
