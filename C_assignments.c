@@ -193,93 +193,140 @@
 
 
 //1.WAP to practice math functions such as ....
-/*#include<stdio.h>
-#include<math.h>
-int main()
-{
-	double pi= 3.14;
-	double LOGarg=10;
-	double sq=36;
-	double base=4;
-	printf("sin(pi)=%lf \n",sin(pi));
-	printf("cos(pi)=%lf \n",cos(pi));
-	printf("Log is: %lf \n",log(LOGarg));
-	printf("Power function use is: %lf \n",pow(base,2));
-	printf("Square root is: %lf",sqrt(sq));
-     return 0;
-}                      */   // //
+// #include<stdio.h>
+// #include<math.h>
+// int main(){
+
+// 	double pi= 3.14;
+// 	double LOGarg=10;
+// 	double sq=36;
+// 	double base=4;
+// 	printf("sin(pi)=%lf \n",sin(pi));
+// 	printf("cos(pi)=%lf \n",cos(pi));
+// 	printf("Log is: %lf \n",log(LOGarg));
+// 	printf("Power function use is: %lf \n",pow(base,2));
+// 	printf("Square root is: %lf",sqrt(sq));
+//      return 0;
+// }                       
 
 
 
-//4. WAP TO implement assignment operators such as.....
-/*#include<stdio.h>
-int main()
-{
-	int a=10;
+
+//2.WAP to find roots of a Quadratic Eq. (D>=0).
+// #include<stdio.h>
+// #include<math.h>
+// int main(){                  //ax^2+bx+c=0
+//     double a,b,c;                              //NOTE:Use double datatype instead of int for precision.
+// 	double D;
+//     printf("Format of Eqn. : ax^2+bx+c=0 \n1");
+// 	printf("Enter values of coefficients a,b,c with sign...\n");
+
+// 	printf("Enter 'a':-\n ");
+// 	scanf("%lf",&a);
+// 	printf("Enter 'b':-\n ");
+// 	scanf("%lf",&b);
+// 	printf("Enter 'c':-\n ");
+// 	scanf("%lf",&c);
+    
+// 	double alpha,beta;
+
+// 	D=(pow(b,2)-4*a*c);
+
+// 	if(D>=0){
+// 		printf("Roots exist ! \n");
+// 	    alpha= (-b+sqrt(D))/(2*a);                             // Root(α,β)= (-b±√b^2-4ac)/4ac
+// 		beta= (-b-sqrt(D))/(2*a);                              //NOTE: Use () around 2*a for accurate division.
+// 		printf("Roots are:(alpha,beta)=(%lf,%lf) \n",alpha,beta);
+// 	}
+//     else{
+// 		printf("Roots doesn't exist !...Try again. \n");
+// 	}
+
+// 	return 0;
+// }
+
+
+
+//3. WAP to format console output using '\n', '\t', '\b' within printf statement.
+
+// #include<stdio.h>
+// int main()
+// {
+//    	printf("Hello \nWorld");  // newline function
+// 	printf("HelloWorld\b\b\b\b\b");   //backspace function
+// 	printf("Hello\tWorld");   //inserts a tab character in string
 	
-	printf("Shorthand addition assignment operator:%d",a+=10);
-     return 0;
-}     */
+// 	return 0;
+// }
 
 
 
 
+//4. WAP TO implement assignment operators such as += , -= , *=, /= %= etc.
+#include<stdio.h>
+// int main()
+// {
+// 	int a=10;
+	
+// 	printf("Shorthand addition assignment operator:%d \n",a+=20);
+// 	printf("Shorthand addition assignment operator:%d \n",a-=15);
+// 	printf("Shorthand multiplication assignment operator:%d \n",a*=2);
+// 	printf("Shorthand division assignment operator:%d \n",a/=5);
+// 	printf("Shorthand division assignment operator:%d \n",a%=5);
 
+//      return 0;
+// }     
 
 //5. Assignment operator assigns right....
 
-/*#include<stdio.h>
-int main()
-{
-	int a=10,b=5;
-	int temp;
+// #include<stdio.h>
+// int main()
+// {
+// 	int a=10,b=5;
+// 	int temp;
 	
-	temp=a;
-	a=b;
-	b=temp;
+// 	temp=a;
+// 	a=b;
+// 	b=temp;
 	
-	printf("Values after swaping of a: %d \n",a);
-	printf("Value after swaping of b: %d ",b);
-	return 0;              
+// 	printf("Values after swaping of a: %d \n",a);
+// 	printf("Value after swaping of b: %d ",b);
+// 	return 0;              
 	
-}                  */
-
-
-
-//3. WAP to format console output using.....
-
-/*#include<stdio.h>
-int main()
-{
-   	printf("Hello \nWorld");  // newline function
-	printf("Hello\bWorld");   //backspace function
-	printf("Hello\tWorld");   //inserts a tab character in string
-	
-	return 0;
-}*/
-
+// }                  
 
 
 
 //7.WAP to utilize ternary operator.
+// #include<stdio.h>
+// int main(){
+// 	double amt,res;
+// 	printf("Wanna but cake or pastry. Enter budget to know using ternary operator:");
+// 	scanf("%lf",& amt);
+// 	res=(amt>=1000) ? 1 : 0;
+//     printf("1 for cake, 0 for pastry. %lf",res);
 
+// 	return 0;
+// }
 
 
 //8.WAP using sizeof()
 
-/*#include<stdio.h>
+#include<stdio.h>
 int main()
 {
 	char a;
 	int i;
+	float f;
 	double d;
 	
 	printf("Size of a: %d \n",sizeof(a));
 	printf("Size of i: %d \n",sizeof(i));
-	printf("Size of d: %d",sizeof(d));
+	printf("Size of d: %d \n",sizeof(d));
+	printf("Size of f: %d \n",sizeof(f));
 	
 	return 0;
-}       */
+}       
 
 
 
