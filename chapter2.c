@@ -140,20 +140,23 @@ int main(){
 
 //WAP to print the smallest no out of 3 nos.
 
-#include<stdio.h>
-int main(){
-    float a,b,c;
-    printf("Enter your 3 nos. Press enter after each no.");
-    scanf("%d %d %d",&a,&b,&c);
-    if(a<b&&a<c){
-        printf("a is smallest.");
-    }
-    else if(b<a&&b<c){
-        printf("b is smallest.");
-    }
-    else if(c<a&&c<b){
-        
-    }
-    return 0;
-}
+// #include<stdio.h>
+// int main(){
+//     float a,b,c;
+//     printf("Enter your 3 nos. Press enter after each no:");
+//     scanf("%d %d %d",&a,&b,&c);
+//     if(a<b&&a<c){
+//         printf("a is smallest.");
+//     }
+//     else if(b<a&&b<c){
+//         printf("b is smallest.");
+//     }
+//     else if(c<a&&c<b){
+//         printf("c is smallest.");
+//     }
+//     else{
+//         printf("Try again !");
+//     }
+//     return 0;
+// }
 

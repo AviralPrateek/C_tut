@@ -263,7 +263,7 @@
 
 
 //4. WAP TO implement assignment operators such as += , -= , *=, /= %= etc.
-#include<stdio.h>
+//#include<stdio.h>
 // int main()
 // {
 // 	int a=10;
@@ -297,6 +297,12 @@
 
 
 
+//6.WAP to shift left and shift right operators (>> and <<). Ask the application of this operator to your lab instructor.
+
+
+
+
+
 //7.WAP to utilize ternary operator.
 // #include<stdio.h>
 // int main(){
@@ -312,24 +318,43 @@
 
 //8.WAP using sizeof()
 
-#include<stdio.h>
-int main()
-{
-	char a;
-	int i;
-	float f;
-	double d;
+//#include<stdio.h>
+// int main()
+// {
+// 	char a;
+// 	int i;
+// 	float f;
+// 	double d;
 	
-	printf("Size of a: %d \n",sizeof(a));
-	printf("Size of i: %d \n",sizeof(i));
-	printf("Size of d: %d \n",sizeof(d));
-	printf("Size of f: %d \n",sizeof(f));
+// 	printf("Size of a: %d \n",sizeof(a));
+// 	printf("Size of i: %d \n",sizeof(i));
+// 	printf("Size of d: %d \n",sizeof(f));
+// 	printf("Size of f: %d \n",sizeof(d));
 	
-	return 0;
-}       
+// 	return 0;
+// }       
 
 
+//9. WAP to divide two numbers and use type casting operation (e.g. mean = (double)sum/n;).
 
+// #include<stdio.h>
+// int main(){
+// 	printf("Dividing 2 two nos. & using type casting operation...\n");
+// 	int N=10,D=3;
+// 	int mean1;
+// 	double mean2;
+
+// 	mean1 = N/D;
+// 	mean2 = (double)N/D;                                    //Doing proper type casting to save data after decimal.
+// 	printf("Without type casting: %d \n",mean1);
+// 	printf("With type casting : %lf \n",mean2);
+// 	return 0;
+// }
+
+
+//10.String is set of characters (one next to each other stored in the memory and not related to each other).
+//e.g. ="abc123". WAP to practice type casting using the following functions. 
+//You can initialize a string using statement char *s="3.145" Then s is a string.
 
 
 
@@ -412,24 +437,9 @@ int main(){
 	scanf("%d",&b);
 	printf("Enter values of C: \n");
     scanf("%d",&c);
+
+	
     
-    if(a>b)
-    {
-    	(a>c)?printf("A is Greastest"):printf("C is Greatest");
-	}
-	else if(b>c)
-	{
-		(b>a)?printf("B is Greatest"):printf("A is Greatest");
-	}
-	else if(c>a)
-	{
-		(c>b)?printf("C is Greatest"):printf("B is Greatest");
-		
-	}
-	else
-	{
-		printf("Invalid values Try Again !");
-	}
 	return 0;
 	
 }              */
