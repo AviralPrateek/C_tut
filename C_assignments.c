@@ -364,33 +364,34 @@
 
 
 
-// 1.For any character entered....
-/*#include<stdio.h>
+// 1.For any character entered through keyboard check whether the entered character is capital letter, small letter,
+// a digit or special symbol
+// #include<stdio.h>
 
-int main(){
-	char ch;
-	printf("Enter character from console top check if it is Capital, small, a digit, or a special symbol");
-	scanf("%c",&ch);
-	if(ch>='a'&&ch<='z')
-	{
-	printf("Small Letter");
-    }
-	else if(ch>='A'&&ch<='Z')
-	{
-	printf("Capital Letter");
-    }    
-	else if(ch>=0 && ch<=9)
-	{
-	printf("Digit");
-    }
-	else
-	{
-	printf("Special Character");
-	}
+// int main(){
+// 	char ch;
+// 	printf("Enter character from console top check if it is Capital, small, a digit, or a special symbol");
+// 	scanf("%c",&ch);
+// 	if(ch>='a'&&ch<='z')
+// 	{
+// 	printf("Small Letter");
+//     }
+// 	else if(ch>='A'&&ch<='Z')
+// 	{
+// 	printf("Capital Letter");
+//     }    
+// 	else if(ch>=0 && ch<=9)
+// 	{
+// 	printf("Digit");
+//     }
+// 	else
+// 	{
+// 	printf("Special Character");
+// 	}
 
-	return 0;
+// 	return 0;
 
-}            */
+// }            
 
 
 //2.Find the greatest of 3 using 2 methods.  (A).if else (B).Ternary operator.
@@ -428,55 +429,187 @@ int main(){
 
 //Using METHOD 2:
 
-/*#include<stdio.h>
-int main(){
-	int a,b,c;
-	printf("Enter values of A: \n");
-	scanf("%d",&a);
-	printf("Enter values of B: \n");
-	scanf("%d",&b);
-	printf("Enter values of C: \n");
-    scanf("%d",&c);
+// #include<stdio.h>
+// int main(){
+// 	int a,b,c;
+// 	printf("Enter values of A: \n");
+// 	scanf("%d",&a);
+// 	printf("Enter values of B: \n");
+// 	scanf("%d",&b);
+// 	printf("Enter values of C: \n");
+//     scanf("%d",&c);
+//     int res1,res2,res3;;
 
+//     res1=(a>b)&&(a>c)?1:0;
 	
-    
-	return 0;
+// 	res2=(b>a)&&(b>c)?1:0;
 	
-}              */
-
-
+// 	res3=(c>b)&&(c>a)?1:0;
+	
+// 	if(res1==1){
+// 		printf("A is greatest. \n");
+// 	}
+// 	else if(res2==1){
+// 		printf("B is greatest. \n");
+// 	}
+// 	else if (res3==1){
+// 		printf("C is greatest. \n");
+// 	}
+	
+// 	return 0;
+	
+// }              
 
 
 
 //3. To implement calculator using switch operations(+,-,/,*,%)......
 
-/*#include<stdio.h>
-int main(){
+// #include<stdio.h>
+// int main(){
 	
-	int a,b;
-	printf("Enter value of a: ");
-	scanf("%d",&a);
-	printf("Enter value of b: ");
-	scanf("%d",&b);
+// 	int a,b;
+// 	printf("Enter value of a: ");
+// 	scanf("%d",&a);
+// 	printf("Enter value of b: ");
+// 	scanf("%d",&b);
     
-    switch(choice)
+//     switch(choice)
     
 	
-	return 0;
+// 	return 0;
 
-}               */
-
-
+// }               
 
 
 
+//Q4.Display month name according to the month number using Switch Statement
+// #include<stdio.h>
+// int main(){
+// 	int ch;
+// 	printf("Enter your month choice from (1-12) from console : \n");
+// 	scanf("%d",& ch);
+
+// 	switch(ch){
+// 		case 1:
+// 		printf("January \n");
+// 		break;
+// 		case 2:
+// 		printf("Feburary \n");
+// 		break;
+// 		case 3:
+// 		printf("March \n");
+// 		break;
+// 		case 4:
+// 		printf("April \n");
+// 		break;
+// 		case 5:
+// 		printf("May \n");
+// 		break;
+// 		case 6:
+// 		printf("June \n");
+// 		break;
+// 		case 7:
+// 		printf("July \n");
+// 		break;
+// 		case 8:
+// 		printf("August \n");
+// 		break;
+// 		case 9:
+// 		printf("September \n");
+// 		break;
+// 		case 10:
+// 		printf("October \n");
+// 		break;
+// 		case 11:
+// 		printf("November \n");
+// 		break;
+// 		case 12:
+// 		printf("December \n");
+// 		break;
+// 		default:
+// 		printf("Invalid entry");
+
+// 	}
+// 	return 0;
+// }
+
+
+
+
+
+//Q5.To check whether number is: (a) even or odd (b) negative or positive by using (i) if-else (ii) ternary operator.
+
+// #include<stdio.h>
+// int main(){
+// 	int num;
+// 	printf("Enter your number to check if it is even/odd & negative/positive from console: \n");
+// 	scanf("%d",& num);
+// 	int ch;
+// 	printf("Enter 1 to check it with if-else & 2 to check it with ternary operator from console : \n ");
+// 	scanf("%d",& ch);
+// 	switch(ch){         //OPENING OF 1ST SWITCH;
+// 		case 1:        //Checking via if-else
+// 		printf("Enter a to check if the no is even/odd from console & b to check for positive/negative\n");
+// 		char choice1;
+// 		scanf("%c",& choice1);
+
+// 		switch(choice1){      //OPENING OF 2nd SWITCH;
+// 			case 'a':			//Choice a for even/odd;
+// 			if(num%2==0){
+// 				printf("EVEN \n");
+// 			}
+// 			else if(num%2!=0){
+// 				printf("ODD \n");
+// 			}
+// 			else{
+// 				printf("INVALID ENTRY , ENTER INTEGERS ONLY , TRY AGAIN ! \n" );
+// 			}
+// 			break;
+
+// 			case 'b':			//Choice b for negative/positive;      
+// 			if(num>=0){
+// 				printf("POSITIVE NUMBER \n");
+// 			}
+// 			else if(num<0){
+// 				printf("NEGATIVE NUMBER \n");
+// 			}
+// 			else{
+// 				printf("INVALID ENTRY , ENTER INTEGERS ONLY ,TRY AGAIN ! \n");
+// 			}
+// 			break;
+// 			default:
+// 				printf("INVALID ENTRY , ENTER a or b only ,TRY AGAIN ! \n");
+// 		    } //CLOSING OF 2nd SWITCH
+			
+// 		case 2: 		//CHECKING VIA TERNARY OPERATOR
+// 	    char choice2;
+// 		printf("Enter a to check if the no is even/odd from console & b to check for positive/negative\n");
+// 		scanf("%c",& choice2);
+
+// 		switch(choice2){     //OPENING OF 3rd SWITCH
+// 		    case 'a':
+// 			num%2==0 ? printf("EVEN"):printf("ODD \n");
+// 			break;
+ 
+// 			case 'b':
+// 			num>=0 ? printf("Positive \n"):printf("Negative \n");
+// 			break;
+
+// 			default:
+// 			printf("INVALID ENTRY , ENTER a or b only ,TRY AGAIN ! \n");
+// 			}           //CLOSING OF 3rd SWITCH
+// 			}  //CLOSING OF 1st SWITCH;
+// 	return 0;
+// }
+	  
+	
 
 
 
 
 
 
-
+//ASSIGNMENT 5
 
 
 //PROGRAM1
